@@ -29,7 +29,7 @@ export default {
         correo:this.usuario.correo,
         password:this.usuario.password
       }
-      fetch('http://localhost:3000/IngresarUsuario/login',{
+      fetch('https://sys-encuestas-api.herokuapp.com/IngresarUsuario/login',{
         method:"POST",
         body:JSON.stringify(datosEnviar),
         headers:{

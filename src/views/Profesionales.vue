@@ -83,7 +83,7 @@ export default {
             token:localStorage.getItem('token'),
           }
 
-          fetch('http://localhost:3000/Admin' , {
+          fetch('https://sys-encuestas-api.herokuapp.com/Admin' , {
             method:"POST",
             body:JSON.stringify(datosToken),
             headers:{
@@ -106,7 +106,7 @@ export default {
           token:localStorage.getItem('token'),
         }
 
-        fetch('http://localhost:3000/Admin/Profesionales' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales' , {
           method:"POST",
           body:JSON.stringify(datosToken),
           headers:{
@@ -137,7 +137,7 @@ export default {
           correo:this.Profesional.correo
         }
 
-        fetch('http://localhost:3000/Admin/Profesionales/InvitarPro',{
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales/InvitarPro',{
           method:"POST",
           body:JSON.stringify(datosEncuesta),
           headers:{
@@ -161,7 +161,7 @@ export default {
           id
         }
 
-        fetch('http://localhost:3000/Admin/Profesionales/EliminarPro' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales/EliminarPro' , {
           method:"POST",
           body:JSON.stringify(datosEnviar),
           headers:{
@@ -187,7 +187,7 @@ export default {
           id
         }
 
-        fetch('http://localhost:3000/Admin/Profesionales/ActivarPro' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales/ActivarPro' , {
           method:"POST",
           body:JSON.stringify(datosEnviar),
           headers:{

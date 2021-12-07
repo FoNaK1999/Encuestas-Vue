@@ -122,7 +122,7 @@ export default {
 
         }
 
-        fetch('http://localhost:3000/Admin/CrearEncuesta2' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/CrearEncuesta2' , {
           method:"POST",
           body:JSON.stringify(datosEnviar2),
           headers:{

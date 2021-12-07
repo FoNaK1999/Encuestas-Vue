@@ -47,7 +47,7 @@ export default {
         password2:this.usuario.password2
       }
 
-      fetch('http://localhost:3000/IngresarUsuario/IngresarProfesional',{
+      fetch('https://sys-encuestas-api.herokuapp.com/IngresarUsuario/IngresarProfesional',{
           method:"POST",
           body:JSON.stringify(datosEnviar),
           headers:{

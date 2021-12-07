@@ -78,7 +78,7 @@ export default {
           token:localStorage.getItem('token'),
         }
 
-        fetch('http://localhost:3000/Admin' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin' , {
           method:"POST",
           body:JSON.stringify(datosToken),
           headers:{
@@ -104,7 +104,7 @@ export default {
           
         }
 
-        fetch('http://localhost:3000/Admin/CargarEncuestas' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/CargarEncuestas' , {
           method:"POST",
           body:JSON.stringify(datosToken),
           headers:{
@@ -129,7 +129,7 @@ export default {
           token:localStorage.getItem('token'),
         }
 
-        fetch('http://localhost:3000/Admin/CrearEncuesta',{
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/CrearEncuesta',{
           method:"POST",
           body:JSON.stringify(datosEncuesta),
           headers:{

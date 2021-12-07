@@ -54,7 +54,7 @@ export default {
             token:localStorage.getItem('token'),
           }
 
-          fetch('http://localhost:3000/Admin' , {
+          fetch('https://sys-encuestas-api.herokuapp.com/Admin' , {
             method:"POST",
             body:JSON.stringify(datosToken),
             headers:{
@@ -76,7 +76,7 @@ export default {
           token:localStorage.getItem('token'),
         }
 
-        fetch('http://localhost:3000/Admin/Pacientes' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Pacientes' , {
           method:"POST",
           body:JSON.stringify(datosToken),
           headers:{
@@ -106,7 +106,7 @@ export default {
                 token:localStorage.getItem('token'),
                 id
             }
-            fetch('http://localhost:3000/Admin/Pacientes/EliminarPac' , {
+            fetch('https://sys-encuestas-api.herokuapp.com/Admin/Pacientes/EliminarPac' , {
             method:"POST",
             body:JSON.stringify(datos),
             headers:{
@@ -131,7 +131,7 @@ export default {
                 id
             }
 
-            fetch('http://localhost:3000/Admin/Pacientes/ActivarPac' , {
+            fetch('https://sys-encuestas-api.herokuapp.com/Admin/Pacientes/ActivarPac' , {
             method:"POST",
             body:JSON.stringify(datos),
             headers:{

@@ -55,7 +55,7 @@ export default {
             token:localStorage.getItem('token'),
           }
 
-          fetch('http://localhost:3000/Admin' , {
+          fetch('https://sys-encuestas-api.herokuapp.com/Admin' , {
             method:"POST",
             body:JSON.stringify(datosToken),
             headers:{
@@ -80,7 +80,7 @@ export default {
           id
         }
         
-        fetch('http://localhost:3000/Admin/Profesionales/EditarGETPro' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales/EditarGETPro' , {
           method:"POST",
           body:JSON.stringify(datosEnviar),
           headers:{
@@ -107,7 +107,7 @@ export default {
           correo:this.Datos[0].correo_usu
         }
 
-        fetch('http://localhost:3000/Admin/Profesionales/EditarPro' , {
+        fetch('https://sys-encuestas-api.herokuapp.com/Admin/Profesionales/EditarPro' , {
           method:"POST",
           body:JSON.stringify(datosEnviar2),
           headers:{
