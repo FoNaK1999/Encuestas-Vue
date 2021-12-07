@@ -1,4 +1,5 @@
 const express = require('express')
+const serveStatic = require('server-static');
 const path = require('path');
 
 const app = express();
