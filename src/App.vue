@@ -1,25 +1,10 @@
 <template>
-  <div id="nav" v-if="Validar()">
+  <div id="nav" v-if="this.$route.path == '/' || this.$route.path == '/Registro'">
     <router-link to="/">Login</router-link> |
     <router-link to="/Registro">Registrarse</router-link>
   </div>
   <router-view/>
 </template>
-
-<script>
-export default {
-  methods:{
-    Validar(){
-      if(localStorage.getItem('token') || localStorage.getItem('token') == 'undefined' || this.$route.path == '/Profesional/RegPro'){
-        return false;
-      }else{
-        return true;
-      }
-    }
-  }
-}
-</script>
-
 
 <style>
 #app {
