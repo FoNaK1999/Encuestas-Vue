@@ -14,6 +14,7 @@
                 <li class="nav-item">
                     
                 </li>
+                <!--Plantilla Desplegable
                 <li class="nav-item dropdown" v-if="this.$route.path == '/Admin/Pacientes' || this.$route.path == `/Admin/Profesionales` || this.$route.path == '/Admin' || this.$route.path.includes('/Admin/VerPreguntas')">
                 <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Opciones
@@ -25,6 +26,38 @@
                     <li><hr class="dropdown-divider"></li>
                     <li><router-link class="dropdown-item" to="/Admin/Profesionales" v-if="this.$route.path == '/Admin' || this.$route.path == '/Admin/Pacientes'">Profesionales</router-link></li>
                     <li><router-link class="dropdown-item" to="/Admin/Pacientes" v-if="this.$route.path == '/Admin' || this.$route.path == '/Admin/Profesionales'">Pacientes</router-link></li>
+                </ul>
+                </li>-->
+                <!--Primer desplegable Encuestas-->
+                <li class="nav-item dropdown" v-if="this.$route.path == '/Admin'">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <li><router-link class="dropdown-item" to="/Admin/CrearEncuesta" >Crear Encuesta</router-link></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><router-link class="dropdown-item" to="/Admin/Profesionales" >Profesionales</router-link></li>
+                    <li><router-link class="dropdown-item" to="/Admin/Pacientes" >Pacientes</router-link></li>
+                </ul>
+                </li>
+                <!--Segundo desplegable Profesionales-->
+                <li class="nav-item dropdown" v-if="this.$route.path == `/Admin/Profesionales`">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalPro">Invitar Profesional</button></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><router-link class="dropdown-item" to="/Admin/Pacientes" >Pacientes</router-link></li>
+                </ul>
+                </li>
+                <!--Tercer desplegable Pacientes-->
+                <li class="nav-item dropdown" v-if="this.$route.path == '/Admin/Pacientes'">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                    <li><router-link class="dropdown-item" to="/Admin/Profesionales" >Profesionales</router-link></li>
                 </ul>
                 </li>
             </ul>
