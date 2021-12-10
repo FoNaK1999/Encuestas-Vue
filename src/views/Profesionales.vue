@@ -92,7 +92,6 @@ export default {
         })
           .then(respuesta=>respuesta.json())
           .then((datosRespuesta)=>{
-            console.log(datosRespuesta)
             if(datosRespuesta.status == 'error2'){
               alert(datosRespuesta.msg);
               history.back();

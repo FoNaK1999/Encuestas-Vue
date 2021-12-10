@@ -27,11 +27,6 @@ const routes = [
     name: 'Admin',
     component:Admin
   },
-  /*{
-    path:'/CargarEncuesta',
-    name:'CargarEncuesta',
-    component:CargarEncuestas
-  },*/
   {
     path:'/Admin/CrearEncuesta',
     name:'CrearEncuesta',
